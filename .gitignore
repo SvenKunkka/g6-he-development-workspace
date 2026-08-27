@@ -1,0 +1,10 @@
+.venv/
+zephyr-workspace/
+webhid-control/
+vendor/
+firmware-replacement/build*/
+__pycache__/
+analysis/disassembly/
+analysis/extracted/
+analysis/*.json
+analysis/*.txt
