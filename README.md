@@ -1,3 +1,7 @@
+<!-- SVENKUNKKA-README-NAV:BEGIN -->
+[中文项目说明](#project-overview-zh) · [English overview](#project-overview-en) · [维护者 X / Maintainer on X](https://x.com/Svenu1s5)
+<!-- SVENKUNKKA-README-NAV:END -->
+
 # G6 HE firmware lab
 
 This workspace contains the signed-image audit, read-only live probes, a
@@ -54,3 +58,30 @@ The signed images use MCUboot SHA-512 plus Ed25519 signatures. Editing any
 signed byte invalidates the signature. Do not attempt a write until the exact
 bootloader policy, recovery path, debug lock state, unique hardware target, and
 full backup are known.
+
+
+---
+
+<!-- SVENKUNKKA-PROJECT-INFO:BEGIN -->
+
+<a id="project-overview-zh"></a>
+## 中文项目说明
+
+G6 HE 固件研究工作区，包含签名镜像检查、只读 HID 探测、DFU 与恢复分析、DVT 问题整理，以及洁净室固件和 WebHID 研究材料。
+
+**使用入口：** 按照 README 创建 Python 环境并安装 `requirements.txt`；从 `tools/inspect_firmware.py`、`tools/enumerate_keychron_hid.py` 和 `tools/probe_g6_config_readonly.py` 开始检查。
+
+**范围说明：** 需自行提供匹配的固件输入；修改签名字节会使签名失效。已有恢复记录仍保留零输入报告问题，不能将研究材料视为修复完成或正式可刷写版本。
+
+<a id="project-overview-en"></a>
+## English project overview
+
+A G6 HE firmware research workspace containing signed-image inspection, read-only HID probes, DFU and recovery analysis, DVT issue tracking, and clean-room firmware and WebHID research materials.
+
+**Getting started:** Create the Python environment and install `requirements.txt` as documented. Start with `tools/inspect_firmware.py`, `tools/enumerate_keychron_hid.py` and `tools/probe_g6_config_readonly.py`.
+
+**Scope:** Matching firmware inputs must be supplied separately; changing signed bytes invalidates the signature. Recovery records still describe a zero-input-report issue, so research materials should not be treated as a completed fix or an official flashable release.
+
+**仓库维护者 / Repository maintainer:** [SvenKunkka](https://github.com/SvenKunkka) · [X / Twitter](https://x.com/Svenu1s5)
+
+<!-- SVENKUNKKA-PROJECT-INFO:END -->
